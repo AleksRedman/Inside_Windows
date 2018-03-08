@@ -1,0 +1,55 @@
+.callback{
+  
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  
+  @media (max-width: 425px){
+    flex-direction: column;
+  }
+  
+  &__number{
+    text-decoration: none;
+    color: $color-header-text;
+    
+    @media (max-width: 425px){
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+  }
+  
+  &__button{
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+    font-family: $ff-titles;
+    text-transform: uppercase;
+    background-color: $color-buttons;
+    border-bottom: 1px solid #6abe4a;
+    box-shadow: 0px 3px 2px 0px #2c8a12;
+    position: relative;
+    
+    &::before{
+      display: block;
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-image: url(../images/phone-call.png);
+      margin-top: -10px;
+      top: 50%;
+      left: 19px;
+    }
+    
+    &:hover{
+      box-shadow: 0 3px 2px -1px #2c8a12;
+    }
+  }
+}
