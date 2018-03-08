@@ -1,0 +1,62 @@
+.modal-info{
+  position: absolute;
+  width: auto;
+  max-height: 110px;
+  background-color: #fff;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  margin-left: -360px;
+  margin-bottom: -85px;
+  bottom: 50%;
+  left: 50%;
+  box-shadow: 0px 0px 90px -5px rgba(0,0,0,0.31);
+  z-index: 5;
+  display: block;
+  
+  @media (max-width: 768px){
+    bottom: 65%;
+    margin-bottom: 0;
+    margin-left: -150px;
+  }
+  
+  &::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    margin-top: -12px;
+    right: -12px;
+    top: 50%;
+    transform: rotate(45deg);
+    z-index: 1;
+    
+    @media (max-width: 768px){
+      top: auto;
+      right: auto;
+      left: 50%;
+      bottom: -12px;
+      margin-top: 0;
+      margin-left: -12px;
+    }
+  }
+  
+  &__wrap{
+    width: 250px;
+    height: 85px;
+    font-family: $ff-main;
+    font-size: 14px;
+    overflow-y: scroll;
+    padding-right: 25px;
+  }
+}
+#modal_info{
+  display: none;
+}
+
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ background-color: $color-buttons; }
+
+
