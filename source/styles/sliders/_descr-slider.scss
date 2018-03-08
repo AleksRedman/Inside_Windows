@@ -1,0 +1,80 @@
+.descr-slyder {
+  align-self: flex-start;
+  margin-right: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+	
+  @media (max-width: 700px){
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 375px){
+    width: 100%;
+    height: auto;
+  }
+  
+  &__review{
+    width: 100%;
+    height: 250px;
+    @media (max-width: 700px){
+      margin-bottom: 30px;
+    }
+  }
+  
+  &__big{
+    
+    
+    & img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  &__mini-wrap{
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  
+  &__mini{
+    width: 75px;
+    height: 57px;
+    margin-right: 7px;
+    margin-left: 7px;
+    
+    & img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.descr-slyder__mini-wrap .slick-next:before {
+  display: block;
+  width: 11px;
+  height: 17px;
+  content: "";
+  background-image: url(../images/arrow_next.png);
+  opacity: 1;
+  margin-left: 8px;
+}
+
+.descr-slyder__mini-wrap .slick-next:hover:before{
+  background-image: url(../images/arrow_next_active.png);
+}
+
+.descr-slyder__mini-wrap .slick-prev:before {
+  display: block;
+  width: 11px;
+  height: 17px;
+  content: "";
+  background-image: url(../images/arrow_prev.png);
+  opacity: 1;
+}
+
+.descr-slyder__mini-wrap .slick-prev:hover:before{
+  background-image: url(../images/arrow_prev_active.png);
+}
