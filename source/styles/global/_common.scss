@@ -1,7 +1,22 @@
 .container{
   max-width: 1170px;
-  min-width: 320px;
+  min-width: 310px;
   margin: 0 auto;
+  border: 0 solid #fff;
+  
+  @media (max-width: 1170px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  @media (max-width: 373px){
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.bold{
+  font-family: $ff-main-black;
 }
 
 .btn{
@@ -17,4 +32,25 @@
 
 .inline{
   display: inline-block;
+}
+
+.logo{
+  width: 266px;
+  &__img{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 425px){
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+
+.title{
+  font-family: $ff-titles-bold;
+  font-size: 36px;
+  color: $color-titles;
+  text-transform: uppercase;
 }
