@@ -1,0 +1,63 @@
+.catalog{
+  background-color: $color-about-bg;
+  background-image: url(../images/stone_bg.jpg);
+  background-repeat: repeat;
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 40px;
+  padding-top: 35px;
+  
+  &__wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  &__title{
+    margin: 0;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  
+  &__nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+    
+    @media (max-width: 425px){
+      flex-wrap: wrap;
+    }
+  }
+  
+  &__nav-item{
+    margin-right: 1px;
+  }
+  
+  &__nav-link{
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #fff;
+    font-family: $ff-main-bold;
+    font-size: 16px;
+    color: $color-font;
+    text-decoration: none;
+    
+    @media (max-width: 1024px){
+      font-size: 13px;
+    }
+    
+    &:hover{
+      border: 2px solid $color-buttons;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-left: 23px;
+      padding-right: 23px;
+      color: $color-buttons;
+    }
+  }
+  
+}
