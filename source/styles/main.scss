@@ -1,13 +1,48 @@
+//---------------EXTERNAL LIBRARIES---------------
+//
+//
 @import "../../node_modules/font-awesome/scss/font-awesome";
 @import "../../node_modules/normalize.scss/normalize";
 
+
+
+//---------------GLOBAL STYLES---------------
+//
+//
 @import "global/_fonts.scss";
 @import "global/_vars.scss";
 @import "global/_base.scss";
 @import "global/_common.scss";
 @import "global/_mixins.scss";
 
+
+
+//---------------MAIN STYLES---------------
+//
+//
 @import "sections/_header.scss";
 @import "sections/_nav.scss";
 @import "sections/_about.scss";
+@import "sections/_order.scss";
+@import "sections/_share.scss";
+@import "sections/_catalog.scss";
+@import "sections/_popular.scss";
+@import "sections/_price.scss";
 @import "sections/_footer.scss";
+@import "sections/_callback.scss";
+@import "sections/_clock.scss";
+
+
+//---------------SLIDERS---------------
+//
+//
+@import "sliders/_services-slider.scss";
+@import "sliders/_slider-catalog.scss";
+@import "sliders/_descr-slider.scss";
+@import "sliders/_video-slider.scss";
+
+
+//---------------MODAL BLOKS---------------
+//
+//
+@import "modals/_modal-info.scss";
