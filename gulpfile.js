@@ -42,7 +42,7 @@ gulp.task('styles:compile', function () {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer ({
-        browsers: ['last 2 versions'], 
+        browsers: ['last 10 versions'], 
         cascade: true
     }))
     .pipe(rename('main.min.css'))
@@ -53,7 +53,11 @@ gulp.task('styles:compile', function () {
 /* ------------ JS ------------- */
 gulp.task('js', function(){
     return gulp.src([
-        'source/js/initSlider.js'
+        'source/js/initSlider.js',
+        'source/js/timer.js',
+        'source/js/video_slider.js',
+        'source/js/scrollBar.js',
+        'source/js/modal_info.js'
     ])
     .pipe(sourcemaps.init())
     .pipe(concat('main.min.js'))
