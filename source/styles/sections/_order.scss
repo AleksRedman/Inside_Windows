@@ -1,0 +1,114 @@
+.order{
+  flex-grow: 1;
+  align-self: flex-end;
+  background-color: #fff;
+  
+  @media (max-width: 1024px){
+    align-self: stretch;
+  }
+  
+  &__title{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+    @media (max-width: 1024px){
+      margin-top: 30px;
+    }
+  }
+  
+  &__map{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    
+    @media (max-width: 425px){
+      flex-direction: column;
+    }
+  }
+  
+  &__steps{
+    flex-grow: 1;
+    flex-basis: 130px;
+    text-align: center;
+    padding-bottom: 38px;
+    background-image: url(../images/order_item_shadow.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: relative;
+    z-index: 100;
+    
+    @media (max-width: 425px){
+      background-image: none;
+    }
+    
+    &:last-child{
+      background-image: none;
+      
+    }
+  }
+  
+  &__steps--arrow{
+    
+    
+    &::before{
+      display: block;
+      content: "";
+      position: absolute;
+      width: 37px;
+      height: 37px;
+      background-image: url(../images/right-arrow.png);
+      background-repeat: no-repeat;
+      z-index: 1000;
+      left: -20px;
+      top: 120px;
+      
+      @media (max-width: 425px){
+        display: none;
+      }
+    }
+    
+    &::after{
+      display: block;
+      content: "";
+      position: absolute;
+      width: 37px;
+      height: 37px;
+      background-image: url(../images/right-arrow-grey.png);
+      background-repeat: no-repeat;
+      z-index: 1000;
+      right: -17px;
+      top: 120px;
+      
+      @media (max-width: 425px){
+        display: none;
+      }
+    }
+  }
+  
+  &__icon{
+    margin: 0 auto;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  &__text{
+    display: inline-block;
+    font-family: $ff-main;
+    font-size: 14px;
+    max-width: 130px;
+    align-items: center;
+    color: #2f3131;
+    
+    &--grey{
+      color: #d6d9dd;
+    }
+  }
+  
+}

@@ -1,0 +1,32 @@
+.clock{
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  
+  @media (max-width: 425px){
+    width: 100%;
+  }
+  
+  &__column{
+    width: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 17px;
+    padding-top: 12px;
+  }
+  
+  &__timer{
+    color: $color-clock-numbers;
+    font-family: $ff-titles-bold;
+    font-size: 56px;
+  }
+  
+  &__text{
+    color: $color-clock-text;
+  }
+}

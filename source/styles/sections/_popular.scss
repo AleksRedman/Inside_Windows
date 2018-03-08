@@ -1,0 +1,187 @@
+.popular{
+  background-color: $color-about-bg;
+  background-image: url(../images/stone_bg.jpg);
+  background-repeat: repeat;
+  
+  &__wrap{
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+  
+  &__main-title{
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+  
+  &__title{
+    text-align: center;
+  }
+  
+  &__info-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+    @media (max-width: 1024px){
+      flex-direction: column;
+    }
+  }
+  
+  &__descr{
+    background-color: #fff;
+    width: 700px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-right: 30px;
+    
+    @media (max-width: 1024px){
+      width: 100%;
+      margin: 0 auto;
+      text-align: justify;
+    }
+    
+    @media (max-width: 700px){
+      flex-direction: column;
+      
+    }
+  }
+  
+  &__descr-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  &__bold{
+    font-family: $ff-main-bold;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  &__text{
+    
+    & p{
+      font-family: $ff-main;
+      font-size: 14px;
+    }
+  }
+  
+  &__for-order{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    @media (max-width: 1024px){
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  &__share-card{
+    padding-top: 45px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    
+    
+  }
+  
+  &__share{
+    display: block;
+    background-color: #f15858;
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    margin-left: -55px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: $color-buttons-font;
+    font-family: $ff-main-bold;
+    text-transform: uppercase;
+    
+    &::before{
+      display: block;
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-bottom: 11px solid #c24343; 
+      border-left: 7px solid transparent;
+      top: 0;
+      left: -7px;
+    }
+  }
+  
+  &__title{
+    font-family: $ff-main-bold;
+    font-size: 16px;
+    margin-bottom: 23px;
+  }
+  
+  &__info{
+    display: block;
+    width: 65px;
+    height: 65px;
+    border: 6px solid $color-buttons;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    
+    &::before{
+      display: block;
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: $color-buttons;
+      top: 11px;
+      left: 50%;
+      margin-left: -4px;
+      border-radius: 50%;
+    }
+    
+    &::after{
+      display: block;
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 26px;
+      background-color: $color-buttons;
+      top: 27px;
+      left: 50%;
+      margin-left: -4px;
+      border-radius: 3px;
+    }
+  }
+  
+  &__price-card{
+    background-color: #fff;
+    padding-top: 26px;
+    padding-bottom: 30px;
+  }
+  
+  &__price-card-title{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: $ff-main-bold;
+    font-size: 16px;
+  }
+}

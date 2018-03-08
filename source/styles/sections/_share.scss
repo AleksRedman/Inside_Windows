@@ -1,0 +1,48 @@
+.share{
+  background-color: $color-share-bg;
+  background-image: url(../images/share_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  min-height: 330px;
+  color: #fff;
+  
+  &__wrap{
+    background-image: url(../images/share_builders.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
+    background-size: auto;
+    min-height: 330px;
+    padding-bottom: 3px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    
+  }
+  
+  &__descr{
+    
+  }
+  
+  &__title{
+    margin: 0;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  
+  &__text{
+    margin: 0;
+    display: inline-block;
+    font-family: $ff-main;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  &__payless{
+    color: $color-share-payless;
+    display: block;
+    font-size: 16px;
+    font-family: $ff-main-bold;
+  }
+  
+  
+}
