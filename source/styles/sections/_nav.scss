@@ -1,0 +1,110 @@
+.nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  border: 0 solid #fff;
+  
+  @media (max-width: 768px){
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 425px){
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    padding: 0;
+    width: 100%;
+  }
+  
+  &__item{
+    flex-grow: 1;
+    min-height: 100%;
+    margin: 0;
+    min-height: 48px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border-left:1px solid rgba(#fff, .3);
+    
+    @media (max-width: 768px){
+      flex-basis: 30%;
+      border: 3px solid #fff;
+    }
+    
+    @media (max-width: 425px){
+      border: none;
+      border-bottom: 2px solid #fff;
+      flex-basis: none;
+      width: 100%;
+    }
+  }
+  
+  &__link{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: $color-buttons-font;
+    font-family: $ff-titles;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    &:hover{
+      background-color: $color-buttons-font;
+      color: $color-buttons;
+    }
+    
+    @media (max-width: 1024px){
+      font-size: 15px;
+    }
+  }
+  
+  &__item--search{
+    display: block;
+    flex-grow: 0;
+    width: 40px;
+    height: 100%;
+    border-right:1px solid rgba(#fff, .3);
+    
+    @media (max-width: 768px){
+      width: 100%;
+      flex-grow: 1;
+      border: none;
+    }
+  }
+  
+  &__link--search{
+    position: relative;
+    width: 100%;
+    
+    &::after{
+      display: block;
+      content: "";
+      position: absolute;
+      background-image: url('../images/search.png');
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 22px;
+      left:  8px;
+      top: 13px;
+      
+      @media (max-width: 768px){
+        left: 50%;
+        margin-left: -11px;
+      }
+    }
+    
+    :hover::after{
+      background-image: url('../images/search_hover.png');
+    }
+  }
+}
